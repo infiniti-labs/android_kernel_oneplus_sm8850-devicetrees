@@ -17,3 +17,9 @@
 #include "../qcom/audio/alor-audio-mtp.dtsi"
 #include "../qcom/audio/oplus/alor-audio-overlay-common.dtsi"
 #include "../qcom/audio/oplus/macan-24855-audio-alor-overlay.dtsi"
+
+&apps_rsc_drv2 {
+	rpmh-regulator-l5m-e0 {
+		status = "okay";
+	};
+};
