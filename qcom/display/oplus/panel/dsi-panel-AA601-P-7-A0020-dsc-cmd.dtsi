@@ -3467,8 +3467,8 @@
 	/* just for qsync enable*/
 	qcom,qsync-enable;
 	qcom,mdss-dsi-qsync-min-refresh-rate = <1>;
-	/* backlight threshold and sa min fps pairs, highest threshold first */
-	oplus,adfr-sa-min-fps-bl-table = <1162 1>, <0 10>;
+	/* backlight threshold and sa min fps pairs, highest threshold first, 0 keeps the mode rate */
+	oplus,adfr-sa-min-fps-bl-table = <1160 1>, <919 30>, <0 0>;
 
 	// qcom,dsi-dyn-clk-enable;
 
