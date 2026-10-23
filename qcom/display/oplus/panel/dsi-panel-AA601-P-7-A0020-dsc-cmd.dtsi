@@ -3879,11 +3879,219 @@
 			/* standard adfr */
 			qcom,disable-rsc-solver;
 			qcom,mdss-dsi-h-sync-skew = <0>;
+			oplus,adfr-min-fps-mapping-table = <144 72 48 36 24 12>;
+
+			qcom,mdss-dsi-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 01 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 03 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 05 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-5-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 0B 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-hpwm-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 01 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 03 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 05 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-5-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 0B 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-bigdc-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 01 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 03 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 05 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-5-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 87 0B 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-4-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-5-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-4-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-5-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-4-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-5-command-state = "dsi_hs_mode";
 		};
 		timing@sdc_fhd_165 {
 			/* standard adfr */
 			qcom,disable-rsc-solver;
 			qcom,mdss-dsi-h-sync-skew = <0>;
+			oplus,adfr-min-fps-mapping-table = <165 55 33 15 11>;
+
+			qcom,mdss-dsi-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 04 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0A 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0E 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-hpwm-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 04 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0A 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-hpwm-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0E 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-bigdc-adfr-min-fps-0-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 00 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-1-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 02 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-2-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 04 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-3-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0A 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+			qcom,mdss-dsi-bigdc-adfr-min-fps-4-command = [
+				39 00 00 40 00 00 04 FF 5A A5 2D
+				39 00 00 40 00 00 03 89 0E 00
+				39 00 00 00 00 00 04 FF 5A A5 00
+			];
+
+			qcom,mdss-dsi-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-adfr-min-fps-4-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-hpwm-adfr-min-fps-4-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-0-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-1-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-2-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-3-command-state = "dsi_hs_mode";
+			qcom,mdss-dsi-bigdc-adfr-min-fps-4-command-state = "dsi_hs_mode";
 		};
 		timing@oplus_fhd_120 {
 			/* oplus adfr */
